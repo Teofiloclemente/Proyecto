@@ -1,0 +1,21 @@
+.titulo {
+    padding: 3vw;
+    border: 2px solid #696666;
+    box-shadow: 4px 6px 12px rgb(65, 64, 64);
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+
+    font-size: 2vw;
+}
+
+.a1{
+
+    border: 2px solid black;
+    padding: 5px;
+    
+
+}
