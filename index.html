@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>v.1.1</title>
  
  <link rel="stylesheet" href="estilos.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
    <div class="titulo">
@@ -24,6 +26,96 @@
    
    <img src="img/mz.jpg" alt="" width="25%" height="25%" class="a1">
    <img src="img/zPorfiriato.jpeg" alt="" width="25%" height="25%" class="a1">
-   
+ 
+ 
+   <div>
+      <div class="ventana" id="vent">
+         <div id="cerrar"><a href="javascript:cerrar()"></a></div>
+         contenido
+     </div>
+      <section id="contenedor">
+    <button class="botones" id="b1"><a href="javascript:abrir()">
+      Zona de Agrarismo</button></a></section>
+
+    <div>
+        <div class="ventana" id="vent1">
+           <div id="cerrar1"><a href="javascript:cerrar()"></a></div>
+           contenido
+       </div>
+        <section id="contenedor1">
+      <button class="botones" id="b2"><a href="javascript:abrir()">Mejores Zonas</button></a></section>
+<button class="botones" id="b3">Zona del Porfiriato</button>
+   </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<img src="img/historia.jpeg" alt="" width="25%" height="25%" class="a2">
+   <img src="img/Ubicacion.png" alt="" width="25%" height="25%" class="a3">
+ 
+ 
+   <div>
+<button class="botones" id="bn1">Historia</button>
+<button class="botones" id="bn2">Ubicacion</button>
+  </div>
+
+<br>
+<br>
+<br>
+
 </body>
+
+
+<script>
+   function abrir() {
+           document.getElementById("vent").style.display = "block";
+           document.getElementById("contenedor").classList.add("blur");
+       }
+
+       function cerrar() {
+           document.getElementById("vent").style.display = "none";
+           document.getElementById("contenedor").classList.remove("blur");
+       }
+
+       // Cerrar ventana al hacer clic fuera de ella
+       window.onclick = function(event) {
+           var modal = document.getElementById("vent");
+           if (!modal.contains(event.target) && modal.style.display === "block") {
+               cerrar();
+           }
+       }
+       function abrir1() {
+           document.getElementById("vent1").style.display = "block";
+           document.getElementById("contenedor1").classList.add("blur");
+       }
+
+       function cerrar1() {
+           document.getElementById("vent1").style.display = "none";
+           document.getElementById("contenedor1").classList.remove("blur");
+       }
+
+       // Cerrar ventana al hacer clic fuera de ella
+       window.onclick = function(event) {
+           var modal = document.getElementById("vent1");
+           if (!modal.contains(event.target) && modal.style.display === "block") {
+               cerrar();
+           }
+       }
+
+
+document.getElementById('bn2').addEventListener('click', function() {
+    window.location.href = 'https://maps.app.goo.gl/xCqyc542RcG9oA687';
+}
+);
+
+
+
+</script>
+
+
+
 </html>
+
