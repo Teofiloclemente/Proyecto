@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<script src="java.js"></script>
+
     <style>
         .ventana {
             display: none;
@@ -42,77 +45,149 @@
         }
     </style>
 </head>
+
+
+
+
+
 <body>
+
    <div class="titulo">
       <center><h1>Museo Del Agrarismo</h1></center>
    </div> 
 
-   <br>
 
-   <img src="img/zAgrarismo.jpeg" alt="" width="25%" height="25%" class="a1">
-   <img src="img/mz.jpg" alt="" width="25%" height="25%" class="a1">
-   <img src="img/zPorfiriato.jpeg" alt="" width="25%" height="25%" class="a1">
- 
-   <div>
+
+<div class="s1">
+
+   <div class="a1">
       <div class="ventana" id="vent">
          <div class="cerrar" onclick="cerrar('vent', 'contenedor')">X</div>
          Contenido Zona de Agrarismo
+         <br>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in fugit et numquam odit nulla, aperiam dolorum.
+          Quia consequuntur eius excepturi amet accusamus magni? Veritatis esse inventore natus maiores totam.
      </div>
+   
+      <img src="img/zAgrarismo.jpeg" alt="Imagen de Agrarismo" width="25%" height="25%" class="a1">
+
+
+
       <section id="contenedor">
          <button class="botones" id="b1" onclick="abrir('vent', 'contenedor')">Zona de Agrarismo</button>
       </section>
+  </div>
 
-      <div>
-         <div class="ventana" id="vent1">
-            <div class="cerrar" onclick="cerrar('vent1', 'contenedor1')">X</div>
-            Contenido Mejores Zonas
-         </div>
-         <section id="contenedor1">
-            <button class="botones" id="b2" onclick="abrir('vent1', 'contenedor1')">Mejores Zonas</button>
-         </section>
-         
-         <div class="ventana" id="vent2">
-            <div class="cerrar" onclick="cerrar('vent2', 'contenedor2')">X</div>
-            Contenido Zona del Porfiriato
-         </div>
-         <section id="contenedor2">
-            <button class="botones" id="b3" onclick="abrir('vent2', 'contenedor2')">Zona del Porfiriato</button>
-         </section>
-      </div>
 
-   <br><br><br><br><br>
+<div class="a1" id="a2">
 
-   <img src="img/historia.jpeg" alt="" width="25%" height="25%" class="a2">
-   <img src="img/Ubicacion.png" alt="" width="25%" height="25%" class="a3">
- 
-   <div>
+   <div class="ventana" id="vent1">
+      <div class="cerrar" onclick="cerrar('vent1', 'contenedor1')">X</div>
+      Contenido Mejores Zonas
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo natus dolor accusamus
+       corrupti officia debitis, adipisci recusandae ipsa quibusdam quaerat earum rerum magni fuga. Voluptates
+        at ipsam tenetur recusandae hic alias autem tempore unde error? Aliquam hic, pariatur, ab nobis accusamus 
+        dicta fugit, consequatur corporis laborum possimus suscipit quaerat.
+   </div>
+
+   <img src="img/mz.jpg" alt="" width="25%" height="25%" class="a1">
+
+   <section id="contenedor1">
+      <button class="botones" id="b2" onclick="abrir('vent1', 'contenedor1')">Mejores Zonas</button>
+
+</div>
+
+<div class="a1" id="a3">
+   <div class="ventana" id="vent2">
+      <div class="cerrar" onclick="cerrar('vent2', 'contenedor2')">X</div>
+      Contenido Zona del Porfiriato
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, obcaecati at? Iure doloremque quae obcaecati 
+      pariatur eligendi aut reiciendis exercitationem aspernatur omnis quia dolores voluptatum optio, consequatur, possimus
+       maxime! Amet nisi aliquam molestias earum vel consequuntur tenetur temporibus ea inventore commodi quia eveniet eum,
+        alias modi! Possimus, culpa placeat. Magnam voluptatem modi enim qui? Deserunt consequuntur sed impedit hic eos quae
+         voluptates tenetur incidunt harum aut, aperiam repudiandae repellendus cupiditate aliquid saepe doloremque, voluptate
+          reprehenderit consectetur rem dicta alias atque? Consectetur voluptatibus expedita accusamus quo odio deserunt eum
+           tempora, nostrum ea dolore magnam repellendus corporis quod, fuga suscipit explicabo repudiandae!
+   </div>
+
+   <img src="img/zPorfiriato.jpeg" alt="" width="25%" height="25%" class="a1">
+
+   <section id="contenedor2">
+      <button class="botones" id="b3" onclick="abrir('vent2', 'contenedor2')">Zona del Porfiriato</button>
+   </section>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="s2">
+
+
+   <div class="a2">
+
+
+
+
+
       <div class="ventana" id="vent3">
          <div class="cerrar" onclick="cerrar('vent3', 'contenedor3')">X</div>
          Contenido Historia
       </div>
-      <section id="contenedor3">
-         <button class="botones" id="bn1" onclick="abrir('vent3', 'contenedor3')">Historia</button>
-         <button class="botones" id="bn2">Ubicacion</button>
-      </section>
-   </div>
+   
+   <img src="img/historia.jpeg" width="55%">
+   
+   <button class="botones" id="bn1" onclick="abrir('vent3', 'contenedor3')">Historia</button>
+   
+</div>
 
-   <br><br><br>
+
+<div class="a2" id="ya">
+
+
+   <img src="img/Ubicacion.png" alt="" width="65%" class="a3">
+
+
+<a href="https://maps.app.goo.gl/y8GaC6Z2ZcMsccsJ8" type="button" class="botones">Ubicacion</a>
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+  
+  
+ 
+
+     
+
+
+   <br><br><br><br><br>
+
+  
+
+
+
 </body>
 
-<script>
-    function abrir(ventanaId, contenedorId) {
-        document.getElementById(ventanaId).style.display = "block";
-        document.getElementById(contenedorId).classList.add("blur");
-    }
 
-    function cerrar(ventanaId, contenedorId) {
-        document.getElementById(ventanaId).style.display = "none";
-        document.getElementById(contenedorId).classList.remove("blur");
-    }
 
-    document.getElementById('bn2').addEventListener('click', function() {
-        window.location.href = 'https://maps.app.goo.gl/xCqyc542RcG9oA687';
-    });
-</script>
 
 </html>

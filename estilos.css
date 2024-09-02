@@ -12,13 +12,6 @@
     font-size: 2vw;
 }
 
-
-
-
-
-
-
-
 .botones{
 
     background-color: rgb(118, 219, 108);
@@ -26,34 +19,17 @@
     padding: 1.6%;
     border-radius: 20%;
 
+text-decoration: none;
     
 
 }
 
-#b1{
-    margin-left: 10%;
-    position: absolute;
-}
-
-#b2{
-
-    margin-left: 44%;
-    position: absolute;
-}
-
-#b3{
-
- margin-left: 75%;
- position: absolute;
-}
 
 .botones {
     
-    
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
@@ -71,67 +47,61 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#bn1{
-margin-left: 26%;
-position: absolute;
-}
-
-#bn2{
-    margin-left: 65%;
-    position: absolute;
-}
-
 
 .a1{
-
-    border: 2px solid #696666;
-   
-    padding: 0px;
-    margin: 3.6%;
-    border-radius: 10%;
-    margin-bottom: 1%;
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: center;
+  width: 80%;
+  height: 40%;
 
 }
 
 .a2{
-    border: 2px solid #696666;
-    padding: 0px;
-    margin-left : 17%;
-    margin-right : 12%;
-    border-radius: 10%;
-    margin-bottom: 1%;
-
-}
-
-.a3{
-    border: 2px solid #696666;
-    padding: 0px;
- margin-left: 2%;
-  
-    border-radius: 10%;
-    margin-bottom: 1%;
- 
-}
-.ventana {
-    display: none; /* Oculto por defecto */
-    background: rgb(198, 198, 198);
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
     text-align: center;
-    padding: 15px;
-    min-height: 40px;
-    border-radius: 26px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    height: 85%;
-    overflow: scroll;
-    z-index: 1000;
+    width: 80%;
+height: 40%;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+
+
+#a2{
+    margin-top: 1.5%;
 }
+
+#a3{
+    margin-top: 3.4%;
+}
+
+.s1{
+    display: flex;
+    margin-top: 5%;
+}
+
+.botones{
+
+    margin-top: 5%;
+    font-size: 2vw;
+
+
+    font-family: "Kanit", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+
+}
+
+.s2{
+    display: flex;
+   margin-top: 5%;
+}
+
+
+
+
+
+
