@@ -4,118 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>v.1.1</title>
- 
- <link rel="stylesheet" href="estilos.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        .ventana {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #000;
+        }
+        .blur {
+            filter: blur(5px);
+        }
+        .botones {
+            display: inline-block;
+            margin: 10px;
+        }
+        .botones a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 <body>
    <div class="titulo">
-    <center><h1>Museo Del Agrarismo</h1></center>
- </div> 
+      <center><h1>Museo Del Agrarismo</h1></center>
+   </div> 
 
-
-<br>
-
-
+   <br>
 
    <img src="img/zAgrarismo.jpeg" alt="" width="25%" height="25%" class="a1">
-   
    <img src="img/mz.jpg" alt="" width="25%" height="25%" class="a1">
    <img src="img/zPorfiriato.jpeg" alt="" width="25%" height="25%" class="a1">
  
- 
    <div>
       <div class="ventana" id="vent">
-         <div id="cerrar"><a href="javascript:cerrar()"></a></div>
-         contenido
+         <div class="cerrar" onclick="cerrar('vent', 'contenedor')">X</div>
+         Contenido Zona de Agrarismo
      </div>
       <section id="contenedor">
-    <button class="botones" id="b1"><a href="javascript:abrir()">
-      Zona de Agrarismo</button></a></section>
+         <button class="botones" id="b1" onclick="abrir('vent', 'contenedor')">Zona de Agrarismo</button>
+      </section>
 
-    <div>
-        <div class="ventana" id="vent1">
-           <div id="cerrar1"><a href="javascript:cerrar()"></a></div>
-           contenido
-       </div>
-        <section id="contenedor1">
-      <button class="botones" id="b2"><a href="javascript:abrir()">Mejores Zonas</button></a></section>
-<button class="botones" id="b3">Zona del Porfiriato</button>
-   </div>
+      <div>
+         <div class="ventana" id="vent1">
+            <div class="cerrar" onclick="cerrar('vent1', 'contenedor1')">X</div>
+            Contenido Mejores Zonas
+         </div>
+         <section id="contenedor1">
+            <button class="botones" id="b2" onclick="abrir('vent1', 'contenedor1')">Mejores Zonas</button>
+         </section>
+         
+         <div class="ventana" id="vent2">
+            <div class="cerrar" onclick="cerrar('vent2', 'contenedor2')">X</div>
+            Contenido Zona del Porfiriato
+         </div>
+         <section id="contenedor2">
+            <button class="botones" id="b3" onclick="abrir('vent2', 'contenedor2')">Zona del Porfiriato</button>
+         </section>
+      </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+   <br><br><br><br><br>
 
-<img src="img/historia.jpeg" alt="" width="25%" height="25%" class="a2">
+   <img src="img/historia.jpeg" alt="" width="25%" height="25%" class="a2">
    <img src="img/Ubicacion.png" alt="" width="25%" height="25%" class="a3">
  
- 
    <div>
-<button class="botones" id="bn1">Historia</button>
-<button class="botones" id="bn2">Ubicacion</button>
-  </div>
+      <div class="ventana" id="vent3">
+         <div class="cerrar" onclick="cerrar('vent3', 'contenedor3')">X</div>
+         Contenido Historia
+      </div>
+      <section id="contenedor3">
+         <button class="botones" id="bn1" onclick="abrir('vent3', 'contenedor3')">Historia</button>
+         <button class="botones" id="bn2">Ubicacion</button>
+      </section>
+   </div>
 
-<br>
-<br>
-<br>
-
+   <br><br><br>
 </body>
 
-
 <script>
-   function abrir() {
-           document.getElementById("vent").style.display = "block";
-           document.getElementById("contenedor").classList.add("blur");
-       }
+    function abrir(ventanaId, contenedorId) {
+        document.getElementById(ventanaId).style.display = "block";
+        document.getElementById(contenedorId).classList.add("blur");
+    }
 
-       function cerrar() {
-           document.getElementById("vent").style.display = "none";
-           document.getElementById("contenedor").classList.remove("blur");
-       }
+    function cerrar(ventanaId, contenedorId) {
+        document.getElementById(ventanaId).style.display = "none";
+        document.getElementById(contenedorId).classList.remove("blur");
+    }
 
-       // Cerrar ventana al hacer clic fuera de ella
-       window.onclick = function(event) {
-           var modal = document.getElementById("vent");
-           if (!modal.contains(event.target) && modal.style.display === "block") {
-               cerrar();
-           }
-       }
-       function abrir1() {
-           document.getElementById("vent1").style.display = "block";
-           document.getElementById("contenedor1").classList.add("blur");
-       }
-
-       function cerrar1() {
-           document.getElementById("vent1").style.display = "none";
-           document.getElementById("contenedor1").classList.remove("blur");
-       }
-
-       // Cerrar ventana al hacer clic fuera de ella
-       window.onclick = function(event) {
-           var modal = document.getElementById("vent1");
-           if (!modal.contains(event.target) && modal.style.display === "block") {
-               cerrar();
-           }
-       }
-
-
-document.getElementById('bn2').addEventListener('click', function() {
-    window.location.href = 'https://maps.app.goo.gl/xCqyc542RcG9oA687';
-}
-);
-
-
-
+    document.getElementById('bn2').addEventListener('click', function() {
+        window.location.href = 'https://maps.app.goo.gl/xCqyc542RcG9oA687';
+    });
 </script>
 
-
-
 </html>
-
